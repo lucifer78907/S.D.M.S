@@ -46,3 +46,8 @@ hr{
   background: #f5970a;
   text-decoration: none;
 }
+.reg-now{
+    display: block;
+    width: 200px;
+    margin: 25px auto 100px auto;
+}
