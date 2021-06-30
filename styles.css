@@ -16,6 +16,7 @@ h1{
     color: #66BFBF;
 }
 h3{
+    display: inline-block;
     font-family: 'Akaya Kanadaka', cursive;
     font-size: 3.625rem;
     color: #C490E4;
@@ -31,6 +32,7 @@ hr{
     text-align: center;
 }
 .btn {
+    display: inline-block;
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
