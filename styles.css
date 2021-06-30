@@ -1,0 +1,17 @@
+.Starting-image{
+    display: block;
+    margin: 100px auto 100px auto;
+    width: 400px;
+    text-align: center;
+}
+body{
+    background-color:  #FFF5FD;
+}
+.top-container{
+    text-align: center;
+}
+h1{
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem;
+    color: #66BFBF;
+}
