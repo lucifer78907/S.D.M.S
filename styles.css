@@ -29,10 +29,13 @@ hr{
     padding-bottom: 100px;
 }
 .add-stu{
+    position: relative;
     text-align: center;
 }
-.btn {
-    display: inline-block;
+.btn-one{
+    position: absolute;
+    left: 220px;
+    top: 150px;
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
@@ -44,7 +47,26 @@ hr{
   text-decoration: none;
 }
 
-.btn:hover {
+.btn-one:hover {
+  background: #f5970a;
+  text-decoration: none;
+}
+.btn-two{
+    position: absolute;
+    right: 220px;
+    top: 150px;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #3498db;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn-two:hover {
   background: #f5970a;
   text-decoration: none;
 }
@@ -52,4 +74,12 @@ hr{
     display: block;
     width: 200px;
     margin: 25px auto 100px auto;
+}
+#h3-ele{
+    position :absolute;
+    left: 100px;
+}
+#login-text{
+    position: absolute;
+    right: 100px;
 }
