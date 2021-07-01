@@ -4,6 +4,9 @@
     width: 400px;
     text-align: center;
 }
+#sdms:hover{
+    color: gold;
+}
 body{
     background-color:  #FFF5FD;
 }
@@ -80,4 +83,50 @@ hr{
 }
 .temp{
     padding-top: 200px;
+}
+#label-one{
+    position: absolute;
+    font-family: 'Sacramento', cursive;
+    color: #D62AD0;
+    font-size:  2.625rem;
+    top:220px;
+    left: 500px;
+}
+#label-one-f{
+    position: absolute;
+    top: 240px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-top: 10px;
+    font-size: larger;
+    border-bottom: 2px solid blue;
+    width: 30%;
+}
+#label-two{
+    position: absolute;
+    font-family: 'Sacramento', cursive;
+    color: #D62AD0;
+    font-size:  2.625rem;
+    top:320px;
+    left: 500px;
+}
+#label-two-f{
+    position: absolute;
+    top: 320px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-top: 10px;
+    font-size: larger;
+    border-bottom: 2px solid blue;
+    width: 30%;
+}
+#label-three{
+    position: absolute;
+    font-family: 'Sacramento', cursive;
+    color: #D62AD0;
+    font-size:  2.625rem;
+}
+.register-div{
+    position: relative;
+    text-align: center;
 }
