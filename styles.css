@@ -112,7 +112,7 @@ hr{
 }
 #label-two-f{
     position: absolute;
-    top: 320px;
+    top: 330px;
     box-sizing: border-box;
     border-radius: 10px;
     padding-top: 10px;
@@ -125,8 +125,39 @@ hr{
     font-family: 'Sacramento', cursive;
     color: #D62AD0;
     font-size:  2.625rem;
+    top:420px;
+    left: 500px;
+}
+#label-three-f{
+    position: absolute;
+    top: 420px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-top: 10px;
+    font-size: larger;
+    border-bottom: 2px solid blue;
+    width: 30%;
 }
 .register-div{
     position: relative;
     text-align: center;
+}
+.Submit{
+    position: absolute;
+    top: 550px;
+    left: 800px;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #3498db;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.Submit:hover {
+  background: #f5970a;
+  text-decoration: none;
 }
