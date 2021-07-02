@@ -170,6 +170,9 @@ hr{
     font-size: 1.625rem;
     color: #C490E4;
 }
+#bottom-head:hover{
+    color: gold;
+}
 .btn-three{
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
@@ -185,4 +188,20 @@ hr{
 .btn-three:hover {
   background: #f5970a;
   text-decoration: none;
+}
+.last-container{
+    margin-top: 80px;
+    text-align: center;
+    height: 100px;
+    background-color: #66BFBF;
+}
+.btm-mm{
+    position: relative;
+    top: 40px;
+    color: white;
+}
+.footer-link-one{
+    position: relative;
+    top: 20px;
+    color: #11999E;
 }
