@@ -7,10 +7,9 @@
 #sdms:hover{
     color: gold;
 }
-body{
-    background-color:  #FFF5FD;
-}
 .top-container{
+    padding-top: 100px;
+    background-color: #CDF0EA;
     text-align: center;
 }
 h1{
@@ -158,6 +157,32 @@ hr{
 }
 
 .Submit:hover {
+  background: #f5970a;
+  text-decoration: none;
+}
+.bottom-container{
+    text-align: center;
+}
+#bottom-head{
+    text-decoration: underline;
+    display: block;
+    font-family: 'Akaya Kanadaka', cursive;
+    font-size: 1.625rem;
+    color: #C490E4;
+}
+.btn-three{
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #3498db;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn-three:hover {
   background: #f5970a;
   text-decoration: none;
 }
