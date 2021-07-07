@@ -1,3 +1,27 @@
+<?php
+$flag = false;
+if(isset($_POST['fname'])==true){
+    $server = "localhost";
+    $user = "root";
+    $pass = "";
+
+    $c = mysqli_connect($server, $user, $pass);
+
+
+    $fname = $_POST['name'];
+    $email = $_POST['email'];
+    $pass = $_POST['pass'];
+    
+    $sql = "insert into sdms.login values('$name', '$email', '$pass');";
+    
+    if(($c->query($sql))==true){
+        $flag=true;
+    }
+    else{
+        echo $c->error;
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,11 +41,18 @@
 </head>
 <body>
     <div class="register-div">
+        <label id="label-one">Your name</label><br>
+        <input id="label-one-f" type="text" name="yourName"><br>
         <label id="label-two">Your Email:</label><br>
         <input id="label-two-f" type="email" name="yourEmail"><br>
         <label id="label-three">Your Password</label><br>
         <input id="label-three-f" type="password" name="yourPassword"><br>
         <input class="Submit" type="submit">
+        <?php
+        if($flag==true){
+            echo "<p>Submittion Successfull</p>";
+        }
+        ?>
     </div>
 </body>
 </html>
