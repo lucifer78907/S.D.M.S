@@ -202,3 +202,17 @@ hr{
     top: 20px;
     color: #11999E;
 }
+.middle-container{
+    text-align: center;
+}
+#start-para{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.625rem;
+}
+#base-hr{
+    border: dotted;
+    width: 5%;
+    border-width: 5px 0 0 0;
+    color: grey;
+    margin-top: 150px;
+}
