@@ -5,7 +5,7 @@ $flag = false;
 if(isset($_POST['user'])==true){
     $server = "localhost";
     $user = "root";
-    $pass = "";
+    $pass = "Hanuman@7";
 
     $c = mysqli_connect($server, $staff_id, $staff_pass);
 
@@ -13,7 +13,7 @@ if(isset($_POST['user'])==true){
     $staff_id = $_POST['staff_id'];
     $staff_id = $_POST['staff_pass'];
     
-    $sql = "select * from sdms2.StaffLogin where email='$staff_id';";
+    $sql = "select * from sdms.StaffLogin where email='$staff_id';";
 
     $rs = $c->query($sql);
     
