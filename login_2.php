@@ -5,7 +5,7 @@ $flag = false;
 if(isset($_POST['user'])==true){
     $server = "localhost";
     $user = "root";
-    $pass = "Hanuman@7";
+    $pass = "";
 
     $c = mysqli_connect($server, $staff_id, $staff_pass);
 
@@ -48,17 +48,19 @@ if(isset($_POST['user'])==true){
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="register-div">
-        <label id="label-two">Staff ID:</label><br>
-        <input id="label-two-f" type="text" name="yourID"><br>
-        <label id="label-three">Staff Password</label><br>
-        <input id="label-three-f" type="password" name="yourPassword"><br>
-        <input class="Submit" type="submit">
+<form class="form-signin" action="http://localhost/S.D.M.S/login_2.php" method="post" style="text-align: center;">
+        <h1 class="text">Login Here</h1>
+  
+        <input name="user" id="user" type="email" class="form-control top" placeholder="Staff_id" required autofocus><br><br>
+        <input name="pass" id="pass" type="password" class="form-control middle" placeholder="Staff_Password" required ><br><br>
+        <button class="signup" type="submit">Login</button>
+
         <?php
         if($error==true){
             echo "<p>Invalid user id or password</p>";
         }
         ?>
-    </div>
+        <p class="tag">&copy; S.D.M.S</p>
+      </form>
 </body>
 </html>
