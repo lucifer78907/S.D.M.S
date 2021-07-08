@@ -54,6 +54,7 @@ if(isset($_POST['user'])==true){
         <input name="user" id="user" type="email" class="form-control top" placeholder="Staff_id" required autofocus><br><br>
         <input name="pass" id="pass" type="password" class="form-control middle" placeholder="Staff_Password" required ><br><br>
         <button class="signup" type="submit">Login</button>
+
         <?php
         if($error==true){
             echo "<p>Invalid user id or password</p>";

@@ -7,6 +7,7 @@ if(isset($_POST['user'])==true){
     $user = "root";
     $pass = "";
 
+
     $c = mysqli_connect($server, $user, $pass);
 
 

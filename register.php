@@ -7,13 +7,13 @@ if(isset($_POST['fname'])==true){
 
     $c = mysqli_connect($server, $user, $pass);
 
-
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
     $email = $_POST['email'];
     $pass = $_POST['pass'];
     
     $sql = "insert into sdms.login values('$fname','$lname', '$email', '$pass');";
+
     
     if(($c->query($sql))==true){
         $flag=true;
@@ -56,5 +56,6 @@ if(isset($_POST['fname'])==true){
         ?>
         <p class="tag">&copy; S.D.M.S</p>
       </form>
+
 </body>
 </html>
