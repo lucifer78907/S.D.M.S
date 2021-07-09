@@ -5,7 +5,7 @@ $flag = false;
 if(isset($_POST['user'])==true){
     $server = "localhost";
     $user = "root";
-    $pass = "Hanuman@7";
+    $pass = "";
 
     $c = mysqli_connect($server, $staff_id, $staff_pass);
 
