@@ -7,12 +7,13 @@ if(isset($_POST['fname'])==true){
 
     $c = mysqli_connect($server, $user, $pass);
 
-
-    $fname = $_POST['name'];
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
     $email = $_POST['email'];
     $pass = $_POST['pass'];
     
-    $sql = "insert into sdms.login values('$name', '$email', '$pass');";
+    $sql = "insert into sdms.login values('$fname','$lname', '$email', '$pass');";
+
     
     if(($c->query($sql))==true){
         $flag=true;
@@ -40,19 +41,21 @@ if(isset($_POST['fname'])==true){
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="register-div">
-        <label id="label-one">Your name</label><br>
-        <input id="label-one-f" type="text" name="yourName"><br>
-        <label id="label-two">Your Email:</label><br>
-        <input id="label-two-f" type="email" name="yourEmail"><br>
-        <label id="label-three">Your Password</label><br>
-        <input id="label-three-f" type="password" name="yourPassword"><br>
-        <input class="Submit" type="submit">
+    <form class="form-signin" action="http://localhost/S.D.M.S/register.php" method="post" style="text-align: center;">
+        <h1 class="text">Register Here</h1>
+  
+        <input name="fname" id="fname" type="text" class="form-control top" placeholder="First Name" required autofocus><br><br>
+        <input name="lname" id="lname" type="text" class="form-control middle" placeholder="Last Name" required ><br><br>
+        <input name="email" id="email" type="email" class="form-control bottom" placeholder="Email address" required><br><br>
+        <input name="pass" id="pass" type="text" class="form-control bottom" placeholder="Password" required><br><br>
+        <button class="signup">Signup</button>
         <?php
         if($flag==true){
             echo "<p>Submittion Successfull</p>";
         }
         ?>
-    </div>
+        <p class="tag">&copy; S.D.M.S</p>
+      </form>
+
 </body>
 </html>
